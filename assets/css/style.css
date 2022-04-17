@@ -131,17 +131,18 @@ audio {
 /* bosquecito de palmeras */
 .beach_palm-tree.palm-1 {
   animation: showContent 2s linear;
-  left: 55%;
+  left: 53%;
   position: absolute;
   top: -100px;
   z-index: 8;
 }
 .beach_palm-tree.palm-2 {
   animation: showContent 2s linear;
-  left: 62%;
+  left: 59%;
   position: absolute;
   top: -80px;
   z-index: 8;
+  transform: rotateY(180deg)
 }
 .beach_palm-tree.palm-3 {
   animation: showContent 2s linear;
@@ -162,6 +163,7 @@ audio {
   left: 86%;
   position: absolute;
   top: -45px;
+  transform: rotateY(180deg);
   z-index: 8;
 }
 .beach_palm-tree.palm-6 {
@@ -192,6 +194,30 @@ audio {
   top: -90px;
   z-index: 8;
 }
+.beach_palm-tree.palm-10 {
+  animation: showContent 2s linear;
+  left: 3%;
+  position: absolute;
+  top: -90px;
+  z-index: 8;
+  transform: rotateY(180deg);
+}
+.beach_palm-tree.palm-11 {
+  animation: showContent 2s linear;
+  left: -2%;
+  position: absolute;
+  top: -40px;
+  z-index: 8;
+  transform: rotateY(180deg);
+}
+.beach_palm-tree.palm-12 {
+  animation: showContent 2s linear;
+  left: 0%;
+  position: absolute;
+  top: 30px;
+  z-index: 8;
+  transform: rotateY(180deg);
+}
 
 /* transición 4/5 */
 .coco_suicida {
@@ -213,18 +239,7 @@ audio {
   transition: all 0.7s ease-in;
 }
 .beach__people:hover {
-  opacity: 0.02;
-}
-
-
-
-.a, .b, .c, .d,
-.e, .f, .g, .h {
-  transition: all 1s linear;
-}
-.a:hover, .b:hover, .c:hover, .d:hover,
-.e:hover, .f:hover, .g:hover, .h:hover {
-  fill: #F5C525;
+  opacity: 0.2;
 }
 
 .beach__ball {
@@ -235,22 +250,13 @@ audio {
   z-index: 11;
 }
 
-/*! 3 ANIMACIONES QUE SE USAN EN VARIOS LUGARES */
+/*! 3 ANIMACIONES */
 /* Para hacer aparecer el sol y el contenido de texto */
 @keyframes showContent {
   0% { opacity: 0}
   50% { opacity: 0.6}
   100% { opacity: 1}
 }
-
-/* Para mover la pelota */
-/* @keyframes moveToLeft {
-  0% { right: -50px }
-  20% { right: 7vw }
-  60% { right: 15vw }
-  80% { right: 18vw }
-  100% { right: 21vw }
-} */
 
 /* Para mover las hojas de las palmeras y la sombrilla */
 @keyframes moveToRight {
@@ -265,6 +271,7 @@ audio {
   100% {transform: rotate(0deg) }
 }
 
+/* Para mover la pelota */
 @keyframes moveToLeft {
   0.0000% { -webkit-transform: translate(615.0px, -193.0px) ; }
   2.4513% { -webkit-transform: translate(598.9px, -204.5px) ; }
@@ -283,24 +290,14 @@ audio {
   48.9315% { -webkit-transform: translate(273.9px, -24.1px) ; }
   50.0000% { -webkit-transform: translate(270.0px, -11.0px) ; }
   53.0000% { -webkit-transform: translate(260.0px, -11.0px); }
-  /* 54.0000% { -webkit-transform: rotate(.1turn); } */
   58.0000% { -webkit-transform: translate(240.0px, -11.0px) ;}
-  /* 59.0000% { -webkit-transform: rotate(.1turn);  ;} */
   62.0000% { -webkit-transform: translate(220.0px, -11.0px) ;}
-  /* 63.0000% { -webkit-transform: rotate(.1turn) ;} */
   69.0000% { -webkit-transform: translate(200.0px, -11.0px) ;}
-  /* 70.0000% { -webkit-transform: rotate(.1turn) ;} */
   74.0000% { -webkit-transform: translate(180.0px, -11.0px) ;}
-  /* 75.0000% { -webkit-transform: rotate(.1turn) ;} */
   78.0000% { -webkit-transform: translate(160.0px, -11.0px) ;}
-  /* 79.0000% { -webkit-transform: rotate(.1turn) ;} */
   83.0000% { -webkit-transform: translate(130.0px, -11.0px) ;}
-  /* 84.0000% { -webkit-transform: rotate(.1turn) ;} */
   88.0000% { -webkit-transform: translate(100.0px, -11.0px) ;}
-  /* 89.0000% { -webkit-transform: rotate(.1turn) ;} */
   92.0000% { -webkit-transform: translate(70.0px, -11.0px) ;}
-  /* 93.0000% { -webkit-transform: rotate(.1turn) ;} */
   96.0000% { -webkit-transform: translate(50.0px, -11.0px) ;}
-  /* 97.0000% { -webkit-transform: rotate(.1turn) ;} */
   100.0000% { -webkit-transform: translate(30.0px, -11.0px) ;}
 }
