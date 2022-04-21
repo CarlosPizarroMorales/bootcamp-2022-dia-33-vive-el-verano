@@ -15,7 +15,7 @@
   - mujer,
 - Clic:
   - quitasol,
-  - el coco "activo" de cada palmera,
+  - el coco que reaccioana al hover en cada palmera,
   - mujer.
 
 <hr>
